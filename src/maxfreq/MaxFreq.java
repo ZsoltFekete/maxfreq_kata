@@ -38,6 +38,7 @@ public class MaxFreq {
         maxFrequentItem = entry.getKey();
       }
     }
+    result = maxFrequentItem;
   }
 
   public Integer getResult() {
