@@ -5,6 +5,7 @@ public class MaxFreq {
   private int[] input;
 
   public MaxFreq(int[] input) {
+    this.input = input;
   }
 
   public void run() {
