@@ -34,6 +34,7 @@ public class MaxFreq {
       int actualFrequency = entry.getValue();
       if (actualFrequency > maxFrequency) {
         maxFrequency = actualFrequency;
+        maxFrequentItem = entry.getKey();
       }
     }
   }
