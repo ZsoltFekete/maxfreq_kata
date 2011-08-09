@@ -75,6 +75,15 @@ public class MaxFreqTest extends TestCase {
     assertTrue(3 == result);
   }
 
+  public void testMoreMaxElements3() {
+    int[] input = new int[] {1, 3, 3, 3, 3, 2, 2, 2, 4, 4, 4, 4};
+    MaxFreq maxFreq = new MaxFreq(input);
+    maxFreq.run();
+    Integer result = maxFreq.getResult();
+    assertNotNull(result);
+    assertTrue(3 == result);
+  }
+
   
 
   public static Test suite() {
