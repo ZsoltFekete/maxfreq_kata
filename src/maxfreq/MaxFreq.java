@@ -29,8 +29,11 @@ public class MaxFreq {
         frequencies.put(i, 1);
       } 
     }
+    int maxFrequency = 0;
     for (Map.Entry<Integer, Integer> entry : frequencies.entrySet()) {
+      if (entry.getValue() > maxFrequency) {
 
+      }
     }
   }
 
