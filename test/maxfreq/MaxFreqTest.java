@@ -36,7 +36,7 @@ public class MaxFreqTest extends TestCase {
     MaxFreq maxFreq = new MaxFreq(input);
     maxFreq.run();
     Integer result = maxFreq.getResult();
-    assertNotNull(result);
+    assertNull(result);
   }
 
   public static Test suite() {
