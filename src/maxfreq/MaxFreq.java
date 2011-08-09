@@ -12,6 +12,9 @@ public class MaxFreq {
   private Map<Integer, Integer> frequencies =
     new HashMap<Integer, Integer>();
 
+  private int maxFrequency;
+  private int actualFrequency;
+  private int actualItem;
 
   public MaxFreq(int[] input) {
     this.input = input;
@@ -39,10 +42,6 @@ public class MaxFreq {
       frequencies.put(i, 1);
     } 
   }
-
-  private int maxFrequency;
-  private int actualFrequency;
-  private int actualItem;
 
   private void findMaxFrequency() {
     maxFrequency = 0;
