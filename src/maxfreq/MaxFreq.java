@@ -29,6 +29,9 @@ public class MaxFreq {
         frequencies.put(i, 1);
       } 
     }
+    for (Map.Entry<Integer, Integer> entry : frequencies.entrySet()) {
+
+    }
   }
 
   public Integer getResult() {
