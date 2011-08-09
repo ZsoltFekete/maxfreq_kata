@@ -31,6 +31,13 @@ public class MaxFreqTest extends TestCase {
     MaxFreq maxFreq = new MaxFreq(input);
   }
 
+  public void testEmptyInput() {
+    int[] input = new int[] {};
+    MaxFreq maxFreq = new MaxFreq(input);
+    maxFreq.run();
+    Integer result = maxFreq.getResult();
+  }
+
   public static Test suite() {
     return new TestSuite(MaxFreqTest.class);
   }
