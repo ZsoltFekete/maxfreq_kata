@@ -27,13 +27,17 @@ public class MaxFreq {
 
   private void computeFrequencies() {
     for (int i : input) {
-      if (frequencies.containsKey(i)) {
-        int freq = frequencies.get(i);
-        frequencies.put(i, freq+1);
-      } else {
-        frequencies.put(i, 1);
-      } 
+      increaseFrequency(i);
     }
+  }
+
+  private void increaseFrequency(int i) {
+    if (frequencies.containsKey(i)) {
+      int freq = frequencies.get(i);
+      frequencies.put(i, freq+1);
+    } else {
+      frequencies.put(i, 1);
+    } 
   }
 
   private void findMaxFrequency() {
