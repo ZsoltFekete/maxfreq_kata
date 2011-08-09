@@ -30,6 +30,7 @@ public class MaxFreq {
       } 
     }
     int maxFrequency = 0;
+    int maxFrequentItem = 0;
     for (Map.Entry<Integer, Integer> entry : frequencies.entrySet()) {
       int actualFrequency = entry.getValue();
       if (actualFrequency > maxFrequency) {
