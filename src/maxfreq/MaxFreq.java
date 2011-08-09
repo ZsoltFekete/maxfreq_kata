@@ -40,19 +40,27 @@ public class MaxFreq {
     } 
   }
 
+  private int maxFrequency;
+  private int actualFrequency;
+  private int actualItem;
+
   private void findMaxFrequency() {
-    int maxFrequency = 0;
+    maxFrequency = 0;
     maxFrequentItem = 0;
     for (Map.Entry<Integer, Integer> entry : frequencies.entrySet()) {
-      int actualFrequency = entry.getValue();
-      int actualItem = entry.getKey();
-      if (actualFrequency > maxFrequency || 
-          (actualFrequency == maxFrequency &&
-           actualItem > maxFrequentItem)) {
+      actualFrequency = entry.getValue();
+      actualItem = entry.getKey();
+      if (betterFound()) {
         maxFrequency = actualFrequency;
         maxFrequentItem = actualItem;
       }
     }
+  }
+
+  private boolean betterFound() {
+    return (actualFrequency > maxFrequency || 
+          (actualFrequency == maxFrequency &&
+           actualItem > maxFrequentItem));
   }
 
   public Integer getResult() {
