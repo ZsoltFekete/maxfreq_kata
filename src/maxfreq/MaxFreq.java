@@ -6,4 +6,8 @@ public class MaxFreq {
 
   public void run() {
   }
+
+  public Integer getResult() {
+    return null;
+  }
 }
