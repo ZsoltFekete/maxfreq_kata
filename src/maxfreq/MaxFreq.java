@@ -11,6 +11,9 @@ public class MaxFreq {
   }
 
   public void run() {
+    if (0 == input.length) {
+      return;
+    }
   }
 
   public Integer getResult() {
