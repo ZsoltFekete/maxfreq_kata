@@ -25,6 +25,8 @@ public class MaxFreq {
       if (frequencies.containsKey(i)) {
         int freq = frequencies.get(i);
         frequencies.put(i, freq+1);
+      } else {
+        frequencies.put(i, 1);
       } 
     }
   }
