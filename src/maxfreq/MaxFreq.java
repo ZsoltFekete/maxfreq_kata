@@ -7,7 +7,7 @@ public class MaxFreq {
 
   private int[] input;
 
-  private Integer result = null;
+  private Integer maxFrequentItem = null;
 
   private Map<Integer, Integer> frequencies =
     new HashMap<Integer, Integer>();
@@ -30,7 +30,7 @@ public class MaxFreq {
       } 
     }
     int maxFrequency = 0;
-    int maxFrequentItem = 0;
+    maxFrequentItem = 0;
     for (Map.Entry<Integer, Integer> entry : frequencies.entrySet()) {
       int actualFrequency = entry.getValue();
       if (actualFrequency > maxFrequency) {
@@ -38,10 +38,9 @@ public class MaxFreq {
         maxFrequentItem = entry.getKey();
       }
     }
-    result = maxFrequentItem;
   }
 
   public Integer getResult() {
-    return result;
+    return maxFrequentItem;
   }
 }
