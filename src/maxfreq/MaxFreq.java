@@ -1,5 +1,8 @@
 package maxfreq;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class MaxFreq {
 
   private int[] input;
