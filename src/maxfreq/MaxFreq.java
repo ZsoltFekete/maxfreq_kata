@@ -6,6 +6,8 @@ public class MaxFreq {
 
   private Integer result = null;
 
+
+
   public MaxFreq(int[] input) {
     this.input = input;
   }
@@ -13,6 +15,9 @@ public class MaxFreq {
   public void run() {
     if (0 == input.length) {
       return;
+    }
+    for (int i : input) {
+    
     }
   }
 
