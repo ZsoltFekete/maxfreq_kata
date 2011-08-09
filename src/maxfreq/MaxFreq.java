@@ -9,7 +9,7 @@ public class MaxFreq {
 
   private Integer result = null;
 
-  private HashMap<Integer, Integer> frequencies =
+  private Map<Integer, Integer> frequencies =
     new HashMap<Integer, Integer>();
 
 
