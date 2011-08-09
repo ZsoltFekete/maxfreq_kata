@@ -27,7 +27,7 @@ public class MaxFreqTest extends TestCase {
   }
 
   public void testConstructor() {
-    int[] input = new int[] {}
+    int[] input = new int[] {};
     MaxFreq maxFreq = new MaxFreq(input);
   }
 
