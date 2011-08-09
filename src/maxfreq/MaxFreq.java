@@ -37,7 +37,7 @@ public class MaxFreq {
   }
 
   private void findMaxFrequency() {
-   int maxFrequency = 0;
+    int maxFrequency = 0;
     maxFrequentItem = 0;
     for (Map.Entry<Integer, Integer> entry : frequencies.entrySet()) {
       int actualFrequency = entry.getValue();
