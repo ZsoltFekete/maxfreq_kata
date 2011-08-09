@@ -6,6 +6,8 @@ public class MaxFreq {
 
   private Integer result = null;
 
+  private HashMap<Integer, Integer> frequencies =
+    new HashMap<Integer, Integer>();
 
 
   public MaxFreq(int[] input) {
