@@ -22,15 +22,7 @@ public class MaxFreq {
       return;
     }
    computeFrequencies();
-   int maxFrequency = 0;
-    maxFrequentItem = 0;
-    for (Map.Entry<Integer, Integer> entry : frequencies.entrySet()) {
-      int actualFrequency = entry.getValue();
-      if (actualFrequency > maxFrequency) {
-        maxFrequency = actualFrequency;
-        maxFrequentItem = entry.getKey();
-      }
-    }
+   findMaxFrequency();
   }
 
   private void computeFrequencies() {
@@ -41,6 +33,18 @@ public class MaxFreq {
       } else {
         frequencies.put(i, 1);
       } 
+    }
+  }
+
+  private void findMaxFrequency() {
+   int maxFrequency = 0;
+    maxFrequentItem = 0;
+    for (Map.Entry<Integer, Integer> entry : frequencies.entrySet()) {
+      int actualFrequency = entry.getValue();
+      if (actualFrequency > maxFrequency) {
+        maxFrequency = actualFrequency;
+        maxFrequentItem = entry.getKey();
+      }
     }
   }
 
