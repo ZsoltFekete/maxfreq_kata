@@ -4,6 +4,8 @@ public class MaxFreq {
 
   private int[] input;
 
+  private Integer result = null;
+
   public MaxFreq(int[] input) {
     this.input = input;
   }
@@ -12,6 +14,6 @@ public class MaxFreq {
   }
 
   public Integer getResult() {
-    return null;
+    return result;
   }
 }
