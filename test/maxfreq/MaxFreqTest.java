@@ -26,6 +26,11 @@ public class MaxFreqTest extends TestCase {
     } catch (NullPointerException e) {}
   }
 
+  public void testConstructor() {
+    int[] input = new int[] {}
+    MaxFreq maxFreq = new MaxFreq(input);
+  }
+
   public static Test suite() {
     return new TestSuite(MaxFreqTest.class);
   }
