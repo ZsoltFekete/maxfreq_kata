@@ -49,10 +49,14 @@ public class MaxFreq {
     for (Map.Entry<Integer, Integer> entry : frequencies.entrySet()) {
       actualFrequency = entry.getValue();
       actualItem = entry.getKey();
-      if (betterFound()) {
-        maxFrequency = actualFrequency;
-        maxFrequentItem = actualItem;
-      }
+      updateMax();
+    }
+  }
+
+  private void updateMax() {
+    if (betterFound()) {
+      maxFrequency = actualFrequency;
+      maxFrequentItem = actualItem;
     }
   }
 
