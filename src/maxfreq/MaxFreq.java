@@ -22,7 +22,10 @@ public class MaxFreq {
       return;
     }
     for (int i : input) {
-    
+      if (frequencies.containsKey(i)) {
+        int freq = frequencies.get(i);
+
+      } 
     }
   }
 
