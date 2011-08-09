@@ -45,6 +45,7 @@ public class MaxFreqTest extends TestCase {
     maxFreq.run();
     Integer result = maxFreq.getResult();
     assertNotNull(result);
+    assertTrue(42 == result);
   }
 
   
